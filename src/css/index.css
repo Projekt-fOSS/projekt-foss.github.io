@@ -9,8 +9,17 @@
     margin-left: auto; 
 } 
 
+.active-nav {
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+    color: #000;
+}
+
 @media only screen and (max-width: 600px) {
     .navbar-brand {
+        padding-left: 15px;
+    }
+    .navbar-nav {
         padding-left: 15px;
     }
 }
