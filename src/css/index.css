@@ -12,7 +12,38 @@ body {
 .navbar-nav { 
     margin-left: auto; 
 } 
-
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 320px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color:#9f1f1e; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
  .active-nav {
     background-color:rgba(255, 255, 255, 0.14);
     border-radius: 5px;
@@ -38,7 +69,7 @@ body {
 }
 .alert-noti {
     color: #1E54B7;
-    background-color: #eff3fe;
+    background-color: #000d32;
 }
 .btn-close:focus {
     box-shadow: none !important;
@@ -100,17 +131,18 @@ body {
     margin-left: -3px;
     margin-top: -17px;
 }
-.bg-img{
-    background-image: url('../../public/assets/univsell-illust-bg.png');
-    background-repeat: no-repeat;
-    width: 1521px;
-    margin-left: -3px;
-    margin-top: -17px;background-size:100% auto;
-height: 1000px;
-
-}
 .fas {
     font-size:60px;
+}
+.title {
+    position: absolute;
+color: #9F1F1F;
+font-size: 80px;
+font-weight: 900;
+font-family: 'product_sansregular', Arial, sans-serif;
+letter-spacing: 10px;
+margin-top: 11rem;
+z-index: -1;
 }
 .log-title {
     font-size: 15px;
@@ -121,6 +153,54 @@ height: 1000px;
 .alert-req {
     font-size: 1.1rem;
 }
+  
+  ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #cc4c4c, #9f1f1e);
+    transition: .5s;
+  }
+  
+  ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  ul li a .fab {
+    width: 132%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #9f1f1e, #eb5d5d);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+    margin-left: -10px;
+  }
 
 @media only screen and (max-width: 600px) {
     .navbar-brand {

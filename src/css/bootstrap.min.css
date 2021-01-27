@@ -73,7 +73,7 @@ body {
  font-weight:400;
  line-height:1.5;
  color:#212529;
- background-color:#fff;
+ background-color:#000;
  -webkit-text-size-adjust:100%;
  -webkit-tap-highlight-color:transparent
 }
@@ -175,7 +175,7 @@ address {
 }
 ol,
 ul {
- padding-left:2rem
+ /*! padding-left:2rem; */
 }
 dl,
 ol,
@@ -4306,11 +4306,11 @@ fieldset:disabled .btn {
  top:-1px
 }
 .alert {
- position:relative;
+ position:absolute;
  padding:1rem 1rem;
  margin-bottom:1rem;
  border:1px solid transparent;
- border-radius:.25rem
+ border-radius:0rem 0rem .25rem .25rem;
 }
 .alert-heading {
  color:inherit
