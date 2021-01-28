@@ -1,4 +1,4 @@
-# Projekt fOSS 
+# Projekt fOSS 🚀
 
 fOSS SSTC is first student driven college based technical
 society, of SSTC Bhilai.
