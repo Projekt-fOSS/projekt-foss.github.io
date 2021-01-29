@@ -1,6 +1,129 @@
-body {
-    font-family: 'product_sansregular', Arial, sans-serif;
-    min-height: 50vh;
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000b3;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #0000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  left: 150px;
+  margin-top: -30px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.49), 0 16px 40px 0 rgba(0, 0, 0, 0.49);
 }
 .navbar {
     padding-top: 0.8rem;
@@ -74,6 +197,9 @@ body {
 .btn-close:focus {
     box-shadow: none !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 .card-gl {
     position: relative;
     display: flex;
@@ -88,19 +214,19 @@ body {
     width: 30rem;
 }
 .card-lol {
-  max-width: 850px;
-left: 40;
-position: absolute;
-min-height: 200px;
-background-color: #141414;
-color: #d2d2d2;
-display: flex;
-flex-direction: column;
-min-width: 0;
-word-wrap: break-word;
-background-clip: border-box;
-border: 1px solid rgba(0,0,0,.125);
-border-radius: .25rem;
+  max-width: 920px;
+  left: 40;
+  position: absolute;
+  min-height: 200px;
+  background-color: #141414;
+  color: #d2d2d2;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .5rem;
 }
 .btn-gl {
     display: inline-block;
